@@ -49,7 +49,17 @@ const Home = () => {
         <SearchBar/>
       </Row>
     </Container>   
-    </section>  
+    </section>    
+    <section>
+      <Container>
+        <Row>
+          <Col lg="3">
+            <h5 className="services__subtitle">What we serve</h5>
+            <h2 className="services__title">we offer our best service</h2>
+          </Col>
+        </Row>
+      </Container>
+    </section>
     </>
   
 };
