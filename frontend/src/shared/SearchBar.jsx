@@ -8,11 +8,15 @@ const SearchBar = () => {
     const  maxGroupSizeRef=useRef(0)      
 
     const searchHandler=()=>{
-        const location=locationRef.current.value  
+        const location=locationRef.current.value
         const distance=distanceRef.current.value
-        const maxGroupSize=maxGroupSizeRef.current.value   
-        if(location ===' ' || distance ===' ' || maxGroupSize ===' '){
-                return alert("All fields are required!")
+        const maxGroupSize=maxGroupSizeRef.current.value     
+        console.log(location); 
+    
+        if(!location || distance ==='' || maxGroupSize ===''){
+            console.log("alert")
+                 return alert("All fields are required!");   
+             
         }  
     }
   return (
