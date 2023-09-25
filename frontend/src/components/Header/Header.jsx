@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Button } from "reactstrap";
  import { NavLink} from 'react-router-dom';
-import logo from "../../assets/images/logo.png";
+import logo1 from "../../assets/images/logo1.jpeg";
 import { Link } from "react-router-dom";
 import "./header.css";
 
@@ -30,7 +30,7 @@ const Header = () => {
                         justify-content-between"
           >
             <div className="logo">
-              <img className="logo-img" src={logo} alt="" />
+              <img className="logo-img" src={logo1} alt="" />
             </div>
             <div className="navigation">
               <ul className="menu d-flex align-items-center gap-5">
