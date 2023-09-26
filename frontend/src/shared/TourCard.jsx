@@ -11,9 +11,8 @@ const TourCard = ({ tour }) => {
         <div className="tour__img">
           <img src={photo} alt="tour-img" />
           <span>Featured</span>
-        </div>
-      </Card>
-      <CardBody>
+        </div> 
+        <CardBody>
         <div
           className="card__top d-flex align-items-center
           justify-content-between"
@@ -36,6 +35,8 @@ const TourCard = ({ tour }) => {
 
         </div>
       </CardBody>
+      </Card>
+
     </div>
   );
 };
