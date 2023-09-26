@@ -8,7 +8,9 @@ const ServiceCard = ({item}) => {
     <div className='service__img'>  
     <img src={imgUrl} alt=''/>
 
-    </div>
+    </div>  
+    <h5>{title}</h5>
+    <p>{desc}</p>
 
     </div>
   );
