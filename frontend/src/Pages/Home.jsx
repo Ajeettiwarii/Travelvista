@@ -9,7 +9,8 @@ import Subtitle from "../shared/Subtitle";
 import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
 import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
-import experienceImg from "../assets/images/experience.png";
+import experienceImg from "../assets/images/experience.png";  
+import MasonryImagesGallery from "../components/Image-gallery/MasonryImagesGallery";
 
 const Home = () => {
   return (
@@ -127,6 +128,10 @@ const Home = () => {
               <h2 className="gallery__title">
                 Visit our customer tour gallery
               </h2>
+            </Col>  
+            <Col lg='12'>  
+            <MasonryImagesGallery/>
+
             </Col>
           </Row>
         </Container>
