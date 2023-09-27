@@ -8,7 +8,8 @@ import worldImg from "../assets/images/world.png";
 import Subtitle from "../shared/Subtitle";
 import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
-import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
+import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";  
+import experienceImg from "../assets/images/experience.png"
 
 const Home = () => {
   return (
@@ -52,7 +53,8 @@ const Home = () => {
             <SearchBar />
           </Row>
         </Container>
-      </section>
+      </section>   
+      {/* =========================================== */}
       <section>
         <Container>
           <Row>
@@ -74,7 +76,8 @@ const Home = () => {
             <FeaturedTourList />
           </Row>
         </Container>
-      </section>
+      </section>   
+      {/* ====================================== */}
       <section>
         <Container>
           <Row>
@@ -107,10 +110,15 @@ const Home = () => {
                 </div>
               </div>
             </Col>
-            <Col lg="6"></Col>
+            <Col lg="6">  
+            <div className="experience__img">
+              <img src={experienceImg} alt=""/>
+            </div>
+            </Col>
           </Row>
         </Container>
-      </section>
+      </section>   
+      {/* ========================================== */}
     </>
   );
 };
