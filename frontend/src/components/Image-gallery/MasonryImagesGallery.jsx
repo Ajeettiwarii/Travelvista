@@ -7,7 +7,8 @@ const MasonryImagesGallery = () => {
     <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 768: 3, 992: 4 }}>
       <Masonary gutter="1rem">
         {galleryImages.map((item, index) => (
-          <img
+          <img  
+          className="masonary__img"
             src={item}
             key={index}
             alt=""
