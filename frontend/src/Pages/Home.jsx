@@ -142,7 +142,7 @@ const Home = () => {
           <Row>
             <Col lg='12'>
               <Subtitle subtitle={'Fans Love'}/>
-              <h2 className="testimonial__title">What our fans about us</h2>
+              <h2 className="testimonial__title">What our fans  say about us</h2>
             </Col>
             <Col lg='12'>
               <Testimonials/>
