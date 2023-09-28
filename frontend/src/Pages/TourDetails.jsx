@@ -59,7 +59,9 @@ const TourDetails = () => {
                       <i class="ri-group-line"></i>
                       {maxGroupSize}
                     </span>
-                  </div>
+                  </div>   
+                  <h5>Description</h5>  
+                  <p>{desc}</p>
                 </div>
               </div>
             </Col>
