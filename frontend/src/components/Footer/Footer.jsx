@@ -17,7 +17,7 @@ const quick__links = [
     display: "Tours",
   },
 ];
-const  quick__links2 = [
+const quick__links2 = [
   {
     path: "/gallery",
     display: "Gallery",
@@ -89,7 +89,33 @@ const Footer = () => {
               ))}
             </ListGroup>
           </Col>
-          <Col lg="3"></Col>
+          <Col lg="3">
+            <h5 className="footer__link-title">Contact</h5>
+            <ListGroup className="footer__quick-links">
+              <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
+                <h6 className="mb-0 d-flex align-items-center gap-2">
+                  <span><i class="ri-map-pin-line"></i></span>  
+                  Address:
+                </h6>  
+                <p className="mb-0">IIST,Indore</p>
+              </ListGroupItem>  
+              <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
+                <h6 className="mb-0 d-flex align-items-center gap-2">
+                  <span><i class="ri-mail-line"></i></span>  
+                  Email:
+                </h6>  
+                <p className="mb-0">ajeet21.tiwari@gmail.com</p>
+              </ListGroupItem>  
+              <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
+                <h6 className="mb-0 d-flex align-items-center gap-2">
+                  <span><i class="ri-phone-fill"></i></span>  
+                  Phone:
+                </h6>  
+                <p className="mb-0">7357150203</p>
+              </ListGroupItem>
+            </ListGroup>
+          </Col>  
+    
         </Row>
       </Container>
     </footer>
