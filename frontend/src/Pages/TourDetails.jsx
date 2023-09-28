@@ -41,11 +41,24 @@ const TourDetails = () => {
                       ) : (
                         <span>({reviews?.length})</span>
                       )}
-                    </span>      
-                      <span>
-                        <i class="ri-map-pin-fill"></i>{address}
-                      </span>
-
+                    </span>
+                    <span>
+                      <i class="ri-map-pin-user-fill"></i> {address}
+                    </span>
+                  </div>
+                  <div className="tour__extra-details">
+                    <span>
+                      <i class="ri-map-pin-2-line"></i>
+                      {city}
+                    </span>
+                    <span>
+                      <i class="ri-money-dollar-circle-line"></i>${price}/per
+                      person
+                    </span>
+                    <span>
+                      <i class="ri-group-line"></i>
+                      {maxGroupSize}
+                    </span>
                   </div>
                 </div>
               </div>
