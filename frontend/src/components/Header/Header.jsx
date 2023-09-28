@@ -45,7 +45,7 @@ const Header = () => {
                         justify-content-between"
           >
             <div className="logo">
-              <img className="logo-img" src={logo1} alt="" />
+              <img className="logo-img " src={logo1} alt="" />
             </div>
             <div className="navigation">
               <ul className="menu d-flex align-items-center gap-5">
@@ -68,7 +68,7 @@ const Header = () => {
                 <Button className="btn secondary__btn">
                   <Link to="/login">Login</Link>
                 </Button>
-                <Button className="btn primary__btn">
+                <Button className="btn primary__btn mb-2">
                   <Link to="/register">Register</Link>
                 </Button>
               </div>
