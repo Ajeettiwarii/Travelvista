@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import { Link } from "react-router-dom";
 import "../styles/thank-you.css";
+import NewsLetter from "../shared/NewsLetter";
 
 const ThankYou = () => {
   return (
@@ -22,7 +23,8 @@ const ThankYou = () => {
           </Col>
         </Row>
       </Container>
-    </section>
+    </section>  
+    
   );
 };
 

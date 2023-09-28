@@ -6,6 +6,7 @@ import tourData from "../assets/data/tours";
 import calculateAvgRating from "../utils/avgRating";
 import avatar from "../assets/images/avatar.jpg";   
 import Booking from "../components/Booking/Booking";
+import NewsLetter from "../shared/NewsLetter";
 const TourDetails = () => {
   const { id } = useParams();
   const reviewMsgRef = useRef(" ");
@@ -146,7 +147,8 @@ const TourDetails = () => {
             </Col>
           </Row>
         </Container>
-      </section>
+      </section>  
+      <NewsLetter/>
     </>
   );
 };
