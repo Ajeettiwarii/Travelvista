@@ -57,7 +57,8 @@
         font-size: .9rem;
         color: #fff;
         margin-top: 1.5rem;
-        text-align: center;
+        text-align: center;   
+        /* display: inline; */
     }   
     .login__form p a{
         color:var(--heading-color);

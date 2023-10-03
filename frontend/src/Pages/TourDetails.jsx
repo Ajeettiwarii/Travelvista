@@ -83,8 +83,8 @@ const TourDetails = () => {
                   <h4>Reviews ({reviews?.length} reviews)</h4>
                   <Form onSubmit={submitHandler}>
                     <div className="d-flex align-items-center gap-3 mb-4  rating__group">
-                      <span onClick={() => setTourRating(1)}>
-                        1 <i class="ri-star-s-fill"></i>
+                      <span onClick={() => setTourRating(1)} > 
+                        1 <i class="ri-star-s-fill" ></i>
                       </span>
                       <span onClick={() => setTourRating(2)}>
                         2 <i class="ri-star-s-fill"></i>

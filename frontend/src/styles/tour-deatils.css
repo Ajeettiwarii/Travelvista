@@ -45,9 +45,10 @@
     font-size: 1.1rem;
     display: flex;
     align-items: center;
-    color: var(--secondary-color);  
+    /* color: var(--secondary-color);   */
     cursor: pointer;
-} 
+}   
+
 .tour__reviews h4{
     margin-bottom: 3rem;
 
