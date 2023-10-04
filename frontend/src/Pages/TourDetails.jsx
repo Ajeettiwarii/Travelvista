@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState,useContext } from "react";
 import "../styles/tour-deatils.css";
 import { Container, Row, Col, Form, ListGroup } from "reactstrap";
 import { useParams } from "react-router-dom";
@@ -7,11 +7,15 @@ import avatar from "../assets/images/avatar.jpg";
 import Booking from "../components/Booking/Booking";
 import NewsLetter from "../shared/NewsLetter";
 import useFetch from "../hooks/useFetch";
-import { BASE_URL } from "../utils/config";
+import { BASE_URL } from "../utils/config";   
+import { AuthContext} from "../context/AuthContext";
 const TourDetails = () => {
   const { id } = useParams();
   const reviewMsgRef = useRef(" ");
-  const [tourRating, setTourRating] = useState(null);
+  const [tourRating, setTourRating] = useState(null);   
+
+   const {user}=useContext(AuthContext)
+
  const {data:tour,loading,error}=useFetch(`${BASE_URL}/tours/${id}`)
   const {
     photo,
@@ -26,10 +30,39 @@ const TourDetails = () => {
   } = tour;
   const { totalRating, avgRating } = calculateAvgRating(reviews);
   const options = { day: "numeric", month: "long", year: "numeric" };   
-  const submitHandler = e =>{
+  const submitHandler = async e =>{
     e.preventDefault()  
     const reviewText=reviewMsgRef.current.value;   
-    // alert(`${reviewText},${totalRating}`)
+    // alert(`${reviewText},${totalRating}`)   
+    if(!user || user===undefined || user===null){
+      alert('please sign in ')
+    }   
+    try{      
+        
+      if(!user || user===undefined || user===null){
+        alert('please sign in ')
+      }     
+      const reviewObj={
+        username : user.username,
+        reviewText,
+        rating: tourRating
+      }
+      const res=await fetch(`${BASE_URL}/review/${id}`,{
+        method : 'post',
+        headers:{
+          'content-type' :  'application/json'
+        },
+        credentials : 'include',
+        body : JSON.stringify(reviewObj) 
+      })     
+
+       const result= await res.json()  
+      alert(result.message)
+
+    }catch(err){   
+      alert(err.message);
+
+    }
   }   
   useEffect(()=> {   
     window.scrollTo(0,0)
